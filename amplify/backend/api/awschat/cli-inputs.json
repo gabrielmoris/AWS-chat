@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "awschat",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/gabrieltrompeta/aws-chat/amplify/backend/api/awschat/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authawschate7cda005"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
+  }
+}
