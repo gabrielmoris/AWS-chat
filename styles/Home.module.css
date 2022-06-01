@@ -1,7 +1,7 @@
 .background {
     max-height: 100%;
     height: 98vh;
-    background: linear-gradient(0deg, #fff, #eae6ff 100%);
+    background: linear-gradient(0deg, #fff, #340ef543 100%);
     display: flex;
     justify-content: center;
 }
@@ -18,11 +18,12 @@
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.25;
     margin-bottom: 1rem;
-    font-family: roboto;
-    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.702);
 }
 
 .chatbox {
@@ -32,6 +33,9 @@
     overflow-y: auto;
     flex-direction: column-reverse;
     text-align: center;
+    background-color: white;
+    border: solid 2px rgba(0, 0, 0, 0.315);
+    border-radius: 4px;
 }
 
 .formContainer {
@@ -51,6 +55,7 @@
 }
 
 .textBox {
+    margin-top: 5px;
     min-height: 48px;
     width: 100%;
     padding-left: 8px;

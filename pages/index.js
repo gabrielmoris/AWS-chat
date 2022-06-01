@@ -4,13 +4,13 @@ import { withAuthenticator } from "@aws-amplify/ui-react";
 import { API, Auth, withSSRContext, graphqlOperation } from "aws-amplify";
 import { listMessages } from "../src/graphql/queries";
 import { createMessage } from "../src/graphql/mutations";
-import { onCreateMessage } from "../src/graphql/subscriptions";
 import Message from "../components/message";
+import { onCreateMessage } from "../src/graphql/subscriptions";
 
 function Home({ messages }) {
-    const [user, setUser] = useState(null);
     const [stateMessages, setStateMessages] = useState([...messages]);
     const [messageText, setMessageText] = useState("");
+    const [user, setUser] = useState(null);
 
     useEffect(() => {
         const fetchUser = async () => {
